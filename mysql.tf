@@ -1,7 +1,7 @@
 #provision mqsql
 
 resource "aws_db_instance" "mysql" {
-  identifier             = "Roboshop-${var.ENV}-mysql"
+  identifier             = "roboshop-${var.ENV}-mysql"
   instance_class         = var.MYSQL_INSTANCE_CLASS
   allocated_storage      = var.MYSQL_STORAGE
   engine                 = var.MYSQL_ENGINE
